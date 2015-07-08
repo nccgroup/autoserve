@@ -6,7 +6,7 @@ autoserve uses Python's BaseHTTPServer class to allow users access to
 locations on disk from a browser without installing anything or placing
 trust in closed source (and potentially unsafe) products.
 
-## Installation
+## Running
 
 1. Clone the Git repository
 2. Copy/move the autoserve_dist_v0.1.zip file to target location
@@ -18,11 +18,21 @@ trust in closed source (and potentially unsafe) products.
 autoserve supports two arguments (optional):
 
 ```
-autoserve.exe [<port> <directory>]
+autoserve.exe [<port> [directory]]
 
-  [port]                Specify port to run HTTP server on (default 8000)
-  [directory]           Specify directory to serve (default is one up from
+  port                Specify port to run HTTP server on (default 8000)
+  directory           Specify directory to serve (default is one up from
                                                     the current working directory)
+```
+
+## Building
+
+To build the autoserve executable, you should run the following command on a Windows
+machine with Python2.7.10 (tested, other versions may work):
+
+```
+setup.py py2exe
+
 ```
 
 ## Contributing

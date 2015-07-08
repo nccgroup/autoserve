@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+
+# autoserve - Double-click HTTP server for Windows
+# Released as open source by NCC Group Plc - http://www.nccgroup.com/
+# Developed by Aidan Marlin (aidan [dot] marlin [at] nccgroup [dot] trust)
+# https://github.com/nccgroup/autoserve
+# Released under AGPL. See LICENSE.md for more information
+
 import sys
 import os
 import BaseHTTPServer
@@ -8,7 +16,7 @@ ServerClass  = BaseHTTPServer.HTTPServer
 Protocol     = "HTTP/1.0"
 
 print "---"
-print "autoserve v0.1 - autoserve.exe [port] [directory]"
+print "autoserve v0.1 - autoserve.exe [<port> [directory]]"
 print "By Aidan Marlin (aidan [dot] marlin [at] nccgroup [dot] trust)"
 print
 
